@@ -9,14 +9,14 @@
     <title>Document</title>
 </head>
 
-<body class="container">
+<body>
         <div class="grid">
-        <section class="first-column">
+        <section class="first-section">
             <div class="Orar">
                 <h4 class="Numele">Orarul Cursurilor</h4>
             </div>
             <div class="flex">
-                <button id="Grupe" class="button">
+                <button id="Grupe" class="button:hover">
                     Grupe
                 </button>
                 <button id="Profesori" class="button">
@@ -27,7 +27,7 @@
                 </button>
             </div>
             <div class="search">
-                <span class="search-icon">
+                <span id="search-icon">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
                         data-svg="search-icon">
                         <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
@@ -38,9 +38,6 @@
                 <a href="" class="icon-search"></a>
             </div>
             <div id="resultZone" class="uk-width-1-1 uk-background-default uk-margin-top uk-overflow-auto">
-                <ul class="lista">
-                    <li id="Select" class="Grupaselectata">IS11Z </li>
-                </ul>
             </div>
             <select id="Selector" class="select">
                 <option value="-1">Ziua</option>
@@ -70,7 +67,7 @@
                 <option>1</option>
                 <option>2</option>
             </select>
-            <div id="Legenda" class="flex">
+            <div id="Legenda">
                 <p class="text-white">P - Prelegere</p>
                 <p class="text-white">S - Seminar</p>
                 <p class="text-white">L - Laborator</p>
@@ -91,7 +88,7 @@
                     </svg>
                 </a>
             </span>
-            <a href="http://student.usarb.md" class="uk-link-muted  uk-margin-left"><img src="img/student3.png"> Student
+            <a href="http://student.usarb.md" class="student-img"><img src="img/student3.png"> Student
             </a>
             <span class="span">
                 <a href="http://orar.usarb.md/printExams?gr=53&sem=1&day=3&week=11&grName=IS11Z&mode=students&pdfWeek%5B%5D=7.11.2022&pdfWeek%5B%5D=13.11.2022"
