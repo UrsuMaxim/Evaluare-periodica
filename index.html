@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="container">
+        <div class="grid">
+        <section class="first-column">
+            <div class="Orar">
+                <h4 class="Numele">Orarul Cursurilor</h4>
+            </div>
+            <div class="flex">
+                <button id="Grupe" class="button">
+                    Grupe
+                </button>
+                <button id="Profesori" class="button">
+                    Profesori
+                </button>
+                <button id="aula" class="button">
+                    Aule
+                </button>
+            </div>
+            <div class="search">
+                <span class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        data-svg="search-icon">
+                        <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
+                        <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path>
+                    </svg>
+                </span>
+                <input type="search" id="searchinput" class="Input">
+                <a href="" class="icon-search"></a>
+            </div>
+            <div id="resultZone" class="uk-width-1-1 uk-background-default uk-margin-top uk-overflow-auto">
+                <ul class="lista">
+                    <li id="Select" class="Grupaselectata">IS11Z </li>
+                </ul>
+            </div>
+            <select id="Selector" class="select">
+                <option value="-1">Ziua</option>
+                <option value="0">Luni</option>
+                <option value="1">Marți</option>
+                <option value="2">Miercuri</option>
+                <option value="3">Joi</option>
+                <option value="4">Vineri</option>
+                <option value="5">Sâmbătă</option>
+                <option value="6">Duminică</option>
+            </select>
+            <select name="Week" id="Weekselect">
+                <option value="1">Săptămâna</option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+            </select>
+            <select id="Semeste" class="Semestre">
+                <option value="-1">Semestru</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <div id="Legenda" class="flex">
+                <p class="text-white">P - Prelegere</p>
+                <p class="text-white">S - Seminar</p>
+                <p class="text-white">L - Laborator</p>
+                <p class="text-white">PC - Proiect de Curs</p>
+                <p class="text-white">EP - Evaluare periodică</p>
+                <p class="text-white">C - Consultație</p>
+                <p class="text-white">E - Examinare</p>
+                <p class="text-white">R - Reexaminare</p>
+            </div>
+            <span>
+                <a href="">Descarcă orar
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        data-svg="file-pdf">
+                        <rect fill="none" stroke="#000" width="13" height="17" x="3.5" y="1.5"></rect>
+                        <path
+                            d="M14.65 11.67c-.48.3-1.37-.19-1.79-.37a4.65 4.65 0 0 1 1.49.06c.35.1.36.28.3.31zm-6.3.06l.43-.79a14.7 14.7 0 0 0 .75-1.64 5.48 5.48 0 0 0 1.25 1.55l.2.15a16.36 16.36 0 0 0-2.63.73zM9.5 5.32c.2 0 .32.5.32.97a1.99 1.99 0 0 1-.23 1.04 5.05 5.05 0 0 1-.17-1.3s0-.71.08-.71zm-3.9 9a4.35 4.35 0 0 1 1.21-1.46l.24-.22a4.35 4.35 0 0 1-1.46 1.68zm9.23-3.3a2.05 2.05 0 0 0-1.32-.3 11.07 11.07 0 0 0-1.58.11 4.09 4.09 0 0 1-.74-.5 5.39 5.39 0 0 1-1.32-2.06 10.37 10.37 0 0 0 .28-2.62 1.83 1.83 0 0 0-.07-.25.57.57 0 0 0-.52-.4H9.4a.59.59 0 0 0-.6.38 6.95 6.95 0 0 0 .37 3.14c-.26.63-1 2.12-1 2.12-.3.58-.57 1.08-.82 1.5l-.8.44A3.11 3.11 0 0 0 5 14.16a.39.39 0 0 0 .15.42l.24.13c1.15.56 2.28-1.74 2.66-2.42a23.1 23.1 0 0 1 3.59-.85 4.56 4.56 0 0 0 2.91.8.5.5 0 0 0 .3-.21 1.1 1.1 0 0 0 .12-.75.84.84 0 0 0-.14-.25z">
+                        </path>
+                    </svg>
+                </a>
+            </span>
+            <a href="http://student.usarb.md" class="uk-link-muted  uk-margin-left"><img src="img/student3.png"> Student
+            </a>
+            <span class="span">
+                <a href="http://orar.usarb.md/printExams?gr=53&sem=1&day=3&week=11&grName=IS11Z&mode=students&pdfWeek%5B%5D=7.11.2022&pdfWeek%5B%5D=13.11.2022"
+                    class="examen">Examen
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="print">
+                        <polyline fill="none" stroke="#000"
+                            points="4.5 13.5 1.5 13.5 1.5 6.5 18.5 6.5 18.5 13.5 15.5 13.5"></polyline>
+                        <polyline fill="none" stroke="#000" points="15.5 6.5 15.5 2.5 4.5 2.5 4.5 6.5"></polyline>
+                        <rect fill="none" stroke="#000" width="11" height="6" x="4.5" y="11.5"></rect>
+                        <rect width="8" height="1" x="6" y="13"></rect>
+                        <rect width="8" height="1" x="6" y="15"></rect>
+                    </svg>
+                </a>
+            </span>
+            <div>
+                Orarul nu lucrează între 23:00 și 5:00
+            </div>
+        </section>
+        <section id="section2">
+            <img src="img/logo.png" alt="Logo universitatii">
+            <h4 class="hedeartext">UNIVERSITATEA DE STAT "ALECU RUSSO" DIN BĂLȚI</h4>
+        </section>
+    </div>
+</body>
+
+</html>
