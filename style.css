@@ -1,32 +1,19 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    min-height: 100vh; 
-    display: grid;
-    grid-template-columns: 10% 30% auto 10%;
-    grid-template-rows: 1;
-}
 
-.grid{
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -130px;
-    left: 0;
+body {
+    display: grid;
+    grid-template-columns: 10% 33% auto 10%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("http://orar.usarb.md/img/new_background_1.png");
 }
 
-.first-section{
+#left-section {
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
@@ -34,7 +21,7 @@ body{
     margin: 20px 20px 0px 20px;
 }
 
-#right-section{
+#right-section {
     grid-column: 3/4;
     margin: 20px;
     display: flex;
@@ -43,74 +30,138 @@ body{
     gap: 10px;
 }
 
-#right-section img{
+#right-section img {
     width: 130px;
     height: 89px;
 }
 
-#right-section h4{
+#right-section h4 {
     color: white;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 1.25rem;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-
-.Numele{
-    background: white;
-    text-align: center;
-    color: gray;
-    padding: 15px;
-    font-size: 20px;
-    font-weight:bold ;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+.Tabel {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid gray;
+    width: 100%;
+    height: 200px;
 }
 
-.button{
+.Tabel  div {
+    display: flex;
+}
+
+
+#nr:hover div {
+    background: #25975A;
+}
+
+.Tabel div div {
+    background: white;
+    border: 0.0001px solid gray;
+    width: 12%;
+    height: 25px;
+    color: white;
+    padding: 3px;
+}
+
+.Tabel div:first-child div {
+    display: flex;
+    background: #25975A;
+    border: 0.5px solid white;
+    width: 12%;
+    height: 25px;
+    justify-content: center;
+}
+
+.Tabel div div:first-child {
+    background: #25975A;
+    border: 0.2px solid white;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.student img {
+    width: 43px;
+    height: 30px;
+}
+
+.header {
+    background: #f8f8f8;;
+    text-align: center;
+    color: #666;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.Bar a {
     background: #25975A;
     color: white;
     padding: 12px 30px;
     font-weight: bold;
 }
 
-
-.button:hover{
+.Bar a:hover {
     background: white;
     color: gray;
 }
 
-.flex{
+.Bar {
     display: flex;
     justify-content: space-between;
 }
 
-#searchinput{
+#cautare {
     width: 100%;
-    padding:10px 10px 10px 30px;
+    padding: 10px 10px 10px 40px;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.search{
+#cautare:focus {
+    outline: none;
+}
+
+.container {
     position: relative;
 }
 
-.search span{
+.container span {
     color: green;
     position: absolute;
     top: 12px;
     left: 8px;
 }
 
+.lista {
+    background: white;
+    height: 100px;
+    width: 100%;
+}
 
+.lista select {
+    width: 100%;
+    border: none;
+    appearance: none;
+}
 
-select{
+.lista select:active {
+    border: none;
+}
+
+select {
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -118,7 +169,7 @@ select{
     font-weight: bold;
 }
 
-#Legenda{
+.Cursuri {
     color: white;
     font-size: 13px;
     display: flex;
@@ -126,8 +177,103 @@ select{
     gap: 15px;
 }
 
-#Legenda p{
+.Cursuri div {
     display: flex;
-    gap: 5px;
+    gap: 8px;
+    align-items: center;
     justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons {
+    color: white;
+    width: 125px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.Buton a {
+    color: white;
+}
+
+#descarcare {
+    background: #25975A;
+}
+
+#exams {
+    background: #f0506e;
+    width: 100px;
+}
+
+.student {
+    display: flex;
+    align-items: center;
+}
+
+.student a {
+    color: gray;
+}
+
+h4 {
+    text-align: center;
+}
+
+.Buton {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Time {
+    color: #32d296;
+    background: #edfbf6;
+    padding: 20px;
+}
+
+.orele {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.orele div {
+    width: 100%;
+    display: flex;
+}
+
+.orele div span {
+    display: inline-block;
+    height: 60px;
+    padding: 10px;
+    border: 0.5px solid gray;
+}
+
+.orele div span:first-child {
+    width: 20%;
+    color: white;
+    background: #25975A;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.orele div:hover span:first-child {
+    background: lightgoldenrodyellow;
+    color: black;
+}
+
+.orele div:hover span:last-child {
+    background: lightgoldenrodyellow;
+    color: black;
+    border: 1px solid white;
+}
+
+.orele div span:last-child {
+    width: 80%;
+    background: white;
 }
